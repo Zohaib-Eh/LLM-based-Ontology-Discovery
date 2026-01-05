@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#livesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#livesIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#locatedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#participatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#participatedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#worksFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#worksFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#hasDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Entity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Organisation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Organisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Entity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Berlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Berlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#OpenAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#OpenAI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Organisation"/>
+        <untitled-ontology-3:locatedIn rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Berlin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Wolfgang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Wolfgang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Person"/>
+        <untitled-ontology-3:livesIn rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#Berlin"/>
+        <untitled-ontology-3:worksFor rdf:resource="http://www.semanticweb.org/zohai/ontologies/2026/0/untitled-ontology-3#OpenAI"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
